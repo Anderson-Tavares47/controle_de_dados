@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #091f33;
+  --foreground: #091f33;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #091f33;
+    --foreground: #091f33;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.MuiBox-root.css-181ggw6 {
+  display: none !important;
+}
+
+/* Em globals.css */
+
+.MuiBox-root.css-i9gxme {
+  background-image: url('../assets/img/logo_logaux_v3.png'); /* Certifique-se de que o caminho está correto */
+  background-size: contain; /* Ajusta o tamanho da imagem */
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
+  /* background-position: center; Centraliza a imagem */
+  width: 50px; /* Ajuste conforme necessário */
+  height: 50px; /* Ajuste conforme necessário */
+  margin: 15px 0 5px 0;
+}
+
