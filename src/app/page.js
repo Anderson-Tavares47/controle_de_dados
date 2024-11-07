@@ -1,15 +1,14 @@
-"use client"
+'use client';
 
 import { useEffect } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 export default function HomePage() {
   const router = useRouter();
 
   useEffect(() => {
-    // Redireciona para a página de dashboard
-    router.replace('/dashboard');
+    router.push('/dashboard');
   }, [router]);
 
-  return null; // Retorna null, pois redirecionará automaticamente
+  return null; // Ou um spinner de carregamento enquanto redireciona, se preferir
 }
